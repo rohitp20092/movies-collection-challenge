@@ -1,24 +1,15 @@
 import MoviesList from "./MoviesList";
 import MovieDetails from "./MovieDetails";
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { Routes, Route } from "react-router-dom";
 
 function MoviesCollection() {
-  const baseURL = "https://swapi.dev/api/films/";
-  const [moviesList, setMovies] = useState([]);
-  useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setMovies(response.data.results);
-      console.log(response.data.results);
-    });
-  }, []);
   return (
     <div>
       <h1>Star Wars</h1>
-      {moviesList.map((item, i) => (
-        <MoviesList data={item} key={i} />
-
-      ))}
+      <Routes>
+      <Route exect path="/" element={<MoviesList />} />
+      <Route exect path="/film/:id" element={<MovieDetails />} />
+      </Routes>
     </div>
   );
 }
