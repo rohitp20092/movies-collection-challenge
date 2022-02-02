@@ -15,6 +15,10 @@ function MoviesCollection() {
   return (
     <div>
       <h1>Star Wars</h1>
+      {moviesList.map((item, i) => (
+        <MoviesList data={item} key={i} />
+
+      ))}
     </div>
   );
 }
