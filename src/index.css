@@ -1,13 +1,87 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #08080a !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.box {
+  overflow: hidden;
+  min-height: 235px;
+  background-color: #16171D;
+}
+
+.box:hover {
+  background-color: #0112FE;
+}
+
+.title {
+  min-height: 70px;
+    max-width: 200px;
+}
+
+.vi {
+  position: relative;
+  bottom: 62px;
+  right: 15px;
+  font-size: 238px;
+  font-weight: bold;
+  height: 0;
+  margin-bottom: 0;
+  color: transparent;
+  opacity: 0.35;
+  text-align: end;
+  font-family: sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #B0AFAF;
+}
+
+.box:hover a.link {
+  color: #0112FE !important;
+  background-color: #fff;
+}
+
+.text-lht {
+  color: #B0AFAF;
+}
+
+.description {
+  font-size: 21px;
+  color: #B0AFAF;
+}
+
+.resp-width {
+  width: 75% !important
+}
+
+.resp-width p {
+  width: 33.33% !important;
+}
+
+.main {
+  min-height: 385px;
+}
+
+@media (max-width: 1024px) and (min-width: 576px) {  
+  .box {
+    min-height: 250px;
+    align-items: center;
+  }
+  .vi {
+    bottom: 156px;
+  }
+}
+@media (max-width: 1024px) {
+  .resp-width {
+    width: 100% !important
+  }
+  .description {
+    font-size: 16px;
+  }
 }
