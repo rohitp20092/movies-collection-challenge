@@ -1,0 +1,26 @@
+export const movieImage = [
+    {
+        imageName:"1-the-phantom-manace.jpg",
+        episode_id:1,
+    },
+    {
+        imageName:"2-attack-of-the-clones.jpg",
+        episode_id:2,
+    },
+    {
+        imageName:"3-regenve-of-the-sith.jpg",
+        episode_id:3,
+    },
+    {
+        imageName:"4-a-new-hope.jpg",
+        episode_id:4,
+    },
+    {
+        imageName:"5-empire-strikes-back.jpg",
+        episode_id:5,
+    },
+    {
+        imageName:"6-return-of-the-jedi.jpg",
+        episode_id:6,
+    }
+]
